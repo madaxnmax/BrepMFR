@@ -5,11 +5,13 @@ startCommand = ""
 restartPolicyType = "ON_FAILURE"
 
 [[services]]
-name = "backend"
+name = "backend-gh"
 root = "backend"
 dockerfilePath = "Dockerfile"
+builder = "DOCKERFILE"
 
 [[services]]
-name = "frontend"
+name = "frontend-gh"
 root = "frontend"
 dockerfilePath = "Dockerfile"
+builder = "DOCKERFILE"
