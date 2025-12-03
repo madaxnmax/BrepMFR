@@ -8,9 +8,9 @@ restartPolicyType = "ON_FAILURE"
 [[services]]
 name = "backend"
 path = "backend"
-dockerfilePath = "Dockerfile"
+dockerfilePath = "backend/Dockerfile"
 
 [[services]]
 name = "frontend"
 path = "frontend"
-dockerfilePath = "Dockerfile"
+dockerfilePath = "frontend/Dockerfile"
