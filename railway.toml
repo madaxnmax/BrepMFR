@@ -7,10 +7,10 @@ restartPolicyType = "ON_FAILURE"
 
 [[services]]
 name = "backend"
-path = "backend"
-dockerfilePath = "backend/Dockerfile"
+root = "backend"
+dockerfilePath = "Dockerfile"
 
 [[services]]
 name = "frontend"
-path = "frontend"
-dockerfilePath = "frontend/Dockerfile"
+root = "frontend"
+dockerfilePath = "Dockerfile"
