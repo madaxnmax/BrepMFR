@@ -1,11 +1,13 @@
-FROM cadquery/cadquery:2.2.0
+FROM continuumio/miniconda3
 
 WORKDIR /app
+
+# Install CadQuery via conda
+RUN conda install -c cadquery -c conda-forge cadquery=2.2.0
 
 COPY requirements.txt .
 
 # Install dependencies
-# CadQuery image has conda environment. We install our extra packages there.
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
