@@ -1,0 +1,33 @@
+.app-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+.sidebar {
+  width: 300px;
+  background: #f0f0f0;
+  padding: 20px;
+  border-right: 1px solid #ccc;
+  overflow-y: auto;
+  color: #333;
+}
+.viewer {
+  flex: 1;
+  background: #1a1a1a;
+}
+.feature-list ul {
+  list-style: none;
+  padding: 0;
+}
+.feature-list li {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+}
+.feature-list li:hover, .feature-list li.active {
+  background: #e0e0e0;
+  font-weight: bold;
+}
+.upload-section {
+  margin-bottom: 20px;
+}
