@@ -3,7 +3,7 @@ FROM continuumio/miniconda3
 WORKDIR /app
 
 # Install CadQuery via conda
-RUN conda install -c cadquery -c conda-forge cadquery=2.2.0
+RUN conda install -c cadquery -c conda-forge python=3.10 cadquery=2.2.0
 
 COPY requirements.txt .
 
